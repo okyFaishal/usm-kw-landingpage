@@ -114,3 +114,4 @@ Pantau terus informasi terbaru dan terhubunglah dengan Universitas Semarang mela
   Dibuat dengan ❤️ di Semarang.<br>
   <i>Menjemput Masa Depan Unggul!</i>
 </p>
+# usk-kw-landingpage
