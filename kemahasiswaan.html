@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemahasiswaan - Universitas Semarang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { usmLight: '#ffb607', usmDark: '#00508f' }, fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] } } } };
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+        .page-header { background: linear-gradient(to right, rgba(0, 80, 143, 0.9), rgba(0, 80, 143, 0.7)), url('assets/usm_students.png'); background-size: cover; background-position: center; padding-top: 10rem; padding-bottom: 5rem; }
+    </style>
+    <script src="assets/components.js" defer></script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <app-header base-path=""></app-header>
+
+    <!-- Header -->
+    <header class="page-header text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center" data-aos="fade-up">
+            <h1 class="font-display text-4xl md:text-5xl font-extrabold mb-4">Aktivitas & <span class="text-usmLight">Organisasi</span></h1>
+            <div class="h-1 w-20 bg-usmLight mx-auto rounded-full mb-6"></div>
+            <p class="text-xl max-w-2xl mx-auto text-gray-200">Gali potensi, kembangkan bakat, dan persiapkan karir masa depan Anda melalui dinamika kehidupan kampus USM.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- BEM -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group lg:col-span-3">
+                <div class="h-64 relative overflow-hidden">
+                    <img src="assets/usm_students.png" alt="Badan Eksekutif Mahasiswa" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/60 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 md:left-10 flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="w-16 h-16 bg-white/20 backdrop-blur-md text-white rounded-2xl flex items-center justify-center text-3xl shadow-lg border border-white/30 flex-shrink-0"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <h3 class="font-display text-3xl font-bold text-white tracking-wide mb-2">Badan Eksekutif Mahasiswa (BEM)</h3>
+                            <p class="text-gray-200 text-sm md:text-base max-w-3xl leading-relaxed">Organisasi intra kampus yang menjadi wadah utama pengembangan keterampilan kepemimpinan (leadership), manajemen organisasi, dan advokasi mahasiswa baik di tingkat Universitas maupun Fakultas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UKM 1: Olahraga -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/usm_sports_arena.png" alt="UKM Olahraga" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 filter saturate-150">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/40 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-volleyball-ball"></i></div>
+                        <h3 class="font-display text-xl font-bold text-white tracking-wide">UKM Olahraga</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm leading-relaxed">Menyediakan kegiatan olahraga profesional (Basket, Voli, Bulutangkis, Futsal, Beladiri) yang aktif berkompetisi di skala nasional dan regional.</p>
+                </div>
+            </div>
+            
+            <!-- UKM 2: Seni Budaya -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/semarang_city.png" alt="UKM Seni Budaya" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/40 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-theater-masks"></i></div>
+                        <h3 class="font-display text-xl font-bold text-white tracking-wide">UKM Seni & Budaya</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm leading-relaxed">Organisasi penyaluran bakat dibidang paduan suara, teater, kreasi tari tradisional dan modern, hingga kepiawaian dalam seni musik.</p>
+                </div>
+            </div>
+
+            <!-- UKM 3: Pusat Studi -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/usm_library.png" alt="Pusat Studi dan Penalaran" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 filter brightness-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/40 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-brain"></i></div>
+                        <h3 class="font-display text-xl font-bold text-white tracking-wide">Pusat Studi & Penalaran</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm leading-relaxed">Wadah bagi mahasiswa penggemar debat bahasa inggris, jurnalistik, pemrograman, riset ilmiah, dan kompetisi bergengsi PKM Belmawa.</p>
+                </div>
+            </div>
+
+            <!-- UKM 4: Relawan -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group lg:col-span-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/usm_campus.png" alt="UKM Relawan & Sosial" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/50 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-6 lg:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-hand-holding-heart"></i></div>
+                            <h3 class="font-display text-2xl font-bold text-white tracking-wide">UKM Relawan & Sosial</h3>
+                        </div>
+                        <p class="text-gray-200 text-sm md:text-base max-w-2xl leading-relaxed text-left md:text-right">Korp Sukarela (KSR) PMI, Resimen Mahasiswa, Pramuka, dan Pecinta Alam (MAPALA) sebagai pilar kepedulian sosial kampus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UKM 5: Paduan Suara -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/usm_auditorium.png" alt="Paduan Suara Mahasiswa" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 filter saturate-150">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/40 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-music"></i></div>
+                        <h3 class="font-display text-xl font-bold text-white tracking-wide">Paduan Suara</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm leading-relaxed">Unit Kegiatan Mahasiswa paduan suara tingkat universitas yang aktif memeriahkan acara-acara kampus dan kejuaraan nasional.</p>
+                </div>
+            </div>
+
+            <!-- UKM 6: Pecinta Alam -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/usm_student_center.png" alt="Mahasiswa Pecinta Alam" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 filter brightness-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/40 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-mountain"></i></div>
+                        <h3 class="font-display text-xl font-bold text-white tracking-wide">Mahasiswa Pecinta Alam</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm leading-relaxed">Wadah bagi mahasiswa pehobi alam bebas, memacu adrenalin, konservasi alam, panjat tebing, dan manajemen ekspedisi.</p>
+                </div>
+            </div>
+
+            <!-- UKM 7: Robotika & TIK -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/usm_laboratory.png" alt="Robotika dan Inovasi TIK" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/40 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-robot"></i></div>
+                        <h3 class="font-display text-xl font-bold text-white tracking-wide">Robotika & Inovasi TIK</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm leading-relaxed">Komunitas riset dan inovasi teknologi bagi mahasiswa penggiat robotik, IoT, e-sports, dan pengembangan software cipta karsa.</p>
+                </div>
+            </div>
+
+            <!-- UKM 8: Kerohanian Pelayanan -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/usm_mosque.png" alt="UKM Kerohanian" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 filter saturate-150">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/40 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-mosque"></i></div>
+                        <h3 class="font-display text-xl font-bold text-white tracking-wide">UKM Kerohanian</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm leading-relaxed">Wadah pembinaan dan kajian kerohanian bagi mahasiswa untuk membentuk karakter spiritual dan intelektual yang berakhlak mulia.</p>
+                </div>
+            </div>
+
+            <!-- UKM 9: Koperasi Mahasiswa -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/usm_business.png" alt="Koperasi Mahasiswa" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 filter brightness-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/40 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-store"></i></div>
+                        <h3 class="font-display text-xl font-bold text-white tracking-wide">Koperasi Mahasiswa</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm leading-relaxed">Organisasi wirausaha kampus (KOPMA) tempat berlatih manajemen bisnis, perdagangan, akuntansi, dan pemberdayaan ekonomi mahasiswa.</p>
+                </div>
+            </div>
+
+            <!-- UKM 10: Pers & Jurnalistik -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden transform transition hover:-translate-y-2 hover:shadow-xl group" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 relative overflow-hidden">
+                    <img src="assets/usm_studio.png" alt="Lembaga Pers Mahasiswa" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 filter saturate-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-usmDark/90 via-usmDark/40 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 backdrop-blur-md text-white rounded-xl flex items-center justify-center text-xl shadow-lg border border-white/30"><i class="fas fa-newspaper"></i></div>
+                        <h3 class="font-display text-xl font-bold text-white tracking-wide">Pers Mahasiswa</h3>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-600 text-sm leading-relaxed">Lembaga independen kampus yang berfokus pada pelatihan jurnalistik, peliputan berita, dan penerbitan produk redaksi digital maupun cetak.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Prestasi Mahasiswa Banner -->
+        <div class="mt-16 bg-gradient-to-br from-usmDark to-blue-800 rounded-3xl overflow-hidden shadow-2xl relative" data-aos="fade-up">
+            <div class="absolute top-0 right-0 p-12 opacity-10">
+                <i class="fas fa-trophy text-9xl text-white"></i>
+            </div>
+            <div class="p-10 lg:p-14 relative z-10 flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2 text-white">
+                    <span class="inline-block px-4 py-1 rounded-full bg-usmLight/20 text-usmLight border border-usmLight/30 font-bold text-sm tracking-wider mb-4"><i class="fas fa-star mr-2"></i> PENCAPAIAN KAMI</span>
+                    <h2 class="font-display text-3xl md:text-4xl font-extrabold mb-6">Penghargaan & Prestasi <br>Mahasiswa USM</h2>
+                    <p class="text-blue-100 text-lg leading-relaxed mb-6">Universitas Semarang sangat memperhatikan apresiasi dan pengembangan prestasi mahasiswa dengan memberikan beasiswa khusus, insentif, fasilitas pelatihan, dan pembimbingan terpadu kepada seluruh kontingen kompetisi kampus.</p>
+                    <a href="#" class="inline-flex items-center gap-2 font-bold text-usmLight hover:text-white transition-colors">
+                        Lihat Daftar Prestasi Lengkap <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-5 rounded-2xl hover:bg-white/20 transition cursor-default">
+                        <div class="w-10 h-10 bg-usmLight rounded-lg text-usmDark flex items-center justify-center text-lg mb-3"><i class="fas fa-gavel"></i></div>
+                        <h4 class="font-bold text-white text-sm mb-1">Debat Konstitusi</h4>
+                        <p class="text-blue-200 text-xs">Juara 1 Tingkat Nasional</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-5 rounded-2xl hover:bg-white/20 transition cursor-default">
+                        <div class="w-10 h-10 bg-usmLight rounded-lg text-usmDark flex items-center justify-center text-lg mb-3"><i class="fas fa-medal"></i></div>
+                        <h4 class="font-bold text-white text-sm mb-1">POMNAS Bulutangkis</h4>
+                        <p class="text-blue-200 text-xs">Medali Emas Antar Mahasiswa</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-5 rounded-2xl hover:bg-white/20 transition cursor-default">
+                        <div class="w-10 h-10 bg-usmLight rounded-lg text-usmDark flex items-center justify-center text-lg mb-3"><i class="fas fa-lightbulb"></i></div>
+                        <h4 class="font-bold text-white text-sm mb-1">PIMNAS DIKTI</h4>
+                        <p class="text-blue-200 text-xs">Finalis Program Kreativitas</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/20 p-5 rounded-2xl hover:bg-white/20 transition cursor-default">
+                        <div class="w-10 h-10 bg-usmLight rounded-lg text-usmDark flex items-center justify-center text-lg mb-3"><i class="fas fa-globe"></i></div>
+                        <h4 class="font-bold text-white text-sm mb-1">Delegasi Internasional</h4>
+                        <p class="text-blue-200 text-xs">Mahasiswa Berprestasi Global</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <app-footer base-path=""></app-footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
+        
+
+        
+    </script>
+</body>
+</html>

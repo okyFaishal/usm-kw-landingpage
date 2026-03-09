@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Universitas Semarang</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        usmLight: '#ffb607',
+                        usmDark: '#00508f',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+        .page-header { background: linear-gradient(to right, rgba(0, 80, 143, 0.9), rgba(0, 80, 143, 0.7)), url('assets/usm_campus.png'); background-size: cover; background-position: center; padding-top: 10rem; padding-bottom: 5rem; }
+    </style>
+    <script src="assets/components.js" defer></script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white overflow-x-hidden">
+
+    <!-- Navbar -->
+    <app-header base-path=""></app-header>
+
+    <!-- Page Header -->
+    <header class="page-header text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
+            <h1 class="font-display text-4xl md:text-5xl font-extrabold mb-4">Profil <span class="text-usmLight">Universitas</span></h1>
+            <div class="h-1 w-20 bg-usmLight mx-auto rounded-full mb-6"></div>
+            <p class="text-xl max-w-2xl mx-auto text-gray-200">Mempelajari lebih dalam mengenai jejak langkah, visi, dan tata nilai yang diusung oleh Universitas Semarang.</p>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="py-16">
+        
+        <!-- Sejarah -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20" data-aos="fade-up">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="font-display text-3xl font-bold text-usmDark mb-6">Sejarah Singkat USM</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed text-justify">
+                        Universitas Semarang (USM) didirikan atas inisiatif dan gagasan dari para alumni Universitas Diponegoro (UNDIP) Semarang pada tahun 1987. Awalnya USM berbentuk Politeknik Semarang sebelum kemudian bertransformasi menjadi Universitas Semarang. Semangat yang melandasi berdirinya USM adalah untuk turut serta mencerdaskan kehidupan bangsa serta memberikan kesempatan luas bagi masyarakat untuk menempuh pendidikan tinggi yang berkualitas dan terjangkau.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-justify">
+                        Dalam perjalanannya, USM telah berkembang pesat dengan terus meningkatkan kualitas pendidikannya. Gedung-gedung perkuliahan bertingkat dan fasilitas modern terus dibangun di kampus terpadu yang berlokasi di Jl. Soekarno-Hatta Tlogosari Semarang. Hingga kini, USM telah meluluskan ribuan alumni yang tersebar di berbagai instansi pemerintah, BUMN, maupun perusahaan swasta terkemuka di seluruh Indonesia.
+                    </p>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="assets/usm_campus.png" alt="Sejarah Kampus USM" class="rounded-2xl shadow-xl w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Fakta & Angka (Statistik) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-usmDark to-blue-800 rounded-3xl p-8 text-center text-white shadow-xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-user-graduate text-4xl text-usmLight mb-4"></i>
+                    <h3 class="font-display text-4xl font-extrabold mb-1">20.000+</h3>
+                    <p class="text-blue-200 text-sm font-semibold uppercase tracking-wider">Mahasiswa Aktif</p>
+                </div>
+                <div class="bg-gradient-to-br from-usmDark to-blue-800 rounded-3xl p-8 text-center text-white shadow-xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-chalkboard-teacher text-4xl text-usmLight mb-4"></i>
+                    <h3 class="font-display text-4xl font-extrabold mb-1">400+</h3>
+                    <p class="text-blue-200 text-sm font-semibold uppercase tracking-wider">Dosen Profesional</p>
+                </div>
+                <div class="bg-gradient-to-br from-usmDark to-blue-800 rounded-3xl p-8 text-center text-white shadow-xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-building text-4xl text-usmLight mb-4"></i>
+                    <h3 class="font-display text-4xl font-extrabold mb-1">6</h3>
+                    <p class="text-blue-200 text-sm font-semibold uppercase tracking-wider">Fakultas Unggulan</p>
+                </div>
+                <div class="bg-gradient-to-br from-usmDark to-blue-800 rounded-3xl p-8 text-center text-white shadow-xl transform transition hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-award text-4xl text-usmLight mb-4"></i>
+                    <h3 class="font-display text-4xl font-extrabold mb-1">43.000+</h3>
+                    <p class="text-blue-200 text-sm font-semibold uppercase tracking-wider">Alumni Sukses</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visi & Misi -->
+        <section class="bg-gray-50 py-20 mb-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+                <div class="text-center mb-12">
+                    <h2 class="font-display text-3xl font-bold text-usmDark mb-4">Visi & Misi</h2>
+                    <div class="h-1 w-16 bg-usmLight mx-auto rounded-full"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-usmLight">
+                        <div class="flex items-center gap-4 mb-6 text-usmDark">
+                            <i class="fas fa-eye text-3xl"></i>
+                            <h3 class="font-display text-2xl font-bold">Visi</h3>
+                        </div>
+                        <p class="text-gray-600 italic leading-relaxed text-lg">
+                            "Menjadi Universitas yang Menghasilkan Sumber Daya Manusia Beradab, Berilmu, dan Berwawasan Ke-Indonesiaan yang Bereputasi Internasional pada Tahun 2035."
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-usmDark">
+                        <div class="flex items-center gap-4 mb-6 text-usmDark">
+                            <i class="fas fa-bullseye text-3xl"></i>
+                            <h3 class="font-display text-2xl font-bold">Misi</h3>
+                        </div>
+                        <ul class="text-gray-600 leading-relaxed space-y-4 list-disc list-inside">
+                            <li>Menyelenggarakan pendidikan akademik, vokasi, maupun profesi yang berkualitas dan bereputasi internasional.</li>
+                            <li>Melakukan penelitian untuk pengembangan ilmu pengetahuan dan teknologi yang berdaya guna bagi peningkatan kesejahteraan masyarakat.</li>
+                            <li>Melaksanakan pengabdian kepada masyarakat berbasis hasil riset.</li>
+                            <li>Menyelenggarakan tata kelola universitas yang baik (Good University Governance).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nilai Inti & Budaya Akademik -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20" data-aos="fade-up">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-4xl font-extrabold text-usmDark mb-4">Nilai Inti & <span class="text-usmLight">Budaya Akademik</span></h2>
+                <div class="h-1.5 w-24 bg-gradient-to-r from-usmDark to-usmLight mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Prinsip dasar yang menjadi pegangan seluruh sivitas akademika Universitas Semarang dalam mengabdi pada keilmuan bangsa.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center group">
+                    <div class="w-20 h-20 bg-blue-50 text-usmDark rounded-full flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-usmDark group-hover:text-usmLight transition-colors duration-300">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-3">Kecerdasan Komprehensif</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Menjunjung tinggi kemampuan analitis, logis, serta adaptif dalam memecahkan masalah dengan mengedepankan inovasi berkelanjutan.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center group">
+                    <div class="w-20 h-20 bg-blue-50 text-usmDark rounded-full flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-usmDark group-hover:text-usmLight transition-colors duration-300">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-3">Keberadaban & Etika</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Membangun karakter mulia dengan menanamkan budi pekerti luhur, empati sosial, gotong-royong, serta tata krama dalam interaksi sosial.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 text-center group">
+                    <div class="w-20 h-20 bg-blue-50 text-usmDark rounded-full flex items-center justify-center text-3xl mx-auto mb-6 group-hover:bg-usmDark group-hover:text-usmLight transition-colors duration-300">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-3">Wawasan Keindonesiaan</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Merawat pilar kebangsaan Pancasila dan UUD 1945, serta menjaga toleransi dan keberagaman demi keutuhan NKRI di era global.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Akreditasi & Penghargaan -->
+        <section class="bg-usmDark py-20 mb-20 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" data-aos="fade-up">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2 text-white">
+                        <span class="inline-block px-4 py-1 rounded-full bg-usmLight/20 text-usmLight border border-usmLight/30 font-bold text-sm tracking-wider mb-4"><i class="fas fa-certificate mr-2"></i> PENGAKUAN PUBLIK</span>
+                        <h2 class="font-display text-3xl md:text-4xl font-extrabold mb-6">Reputasi & <span class="text-usmLight">Akreditasi</span></h2>
+                        <p class="text-blue-100 text-lg leading-relaxed mb-6">Komitmen Universitas Semarang dalam menjaga mutu tri dharma perguruan tinggi terbukti melalui pengakuan akreditasi resmi dari BAN-PT (Badan Akreditasi Nasional Perguruan Tinggi) dan sertifikasi manajemen mutu berskala internasional.</p>
+                        <div class="flex gap-4">
+                            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20 text-center w-32">
+                                <h4 class="font-display text-3xl font-extrabold text-usmLight">B</h4>
+                                <p class="text-xs uppercase tracking-wide mt-1">Akreditasi Institusi</p>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20 text-center w-32 flex flex-col items-center justify-center">
+                                <i class="fas fa-shield-alt text-3xl text-usmLight mb-2"></i>
+                                <p class="text-xs uppercase tracking-wide">Sertifikasi ISO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 w-full">
+                        <div class="bg-white rounded-3xl p-8 shadow-2xl relative">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-50 border border-gray-100 p-4 rounded-2xl text-center hover:bg-white hover:shadow-md transition">
+                                    <div class="text-3xl text-usmDark mb-2"><i class="fas fa-laptop-code"></i></div>
+                                    <h4 class="font-bold text-sm text-usmDark">FTIK</h4>
+                                    <p class="text-xs text-green-600 font-bold mt-1">Baik Sekali</p>
+                                </div>
+                                <div class="bg-gray-50 border border-gray-100 p-4 rounded-2xl text-center hover:bg-white hover:shadow-md transition">
+                                    <div class="text-3xl text-usmDark mb-2"><i class="fas fa-chart-line"></i></div>
+                                    <h4 class="font-bold text-sm text-usmDark">FEB</h4>
+                                    <p class="text-xs text-green-600 font-bold mt-1">Baik Sekali</p>
+                                </div>
+                                <div class="bg-gray-50 border border-gray-100 p-4 rounded-2xl text-center hover:bg-white hover:shadow-md transition">
+                                    <div class="text-3xl text-usmDark mb-2"><i class="fas fa-balance-scale"></i></div>
+                                    <h4 class="font-bold text-sm text-usmDark">F. Hukum</h4>
+                                    <p class="text-xs text-green-600 font-bold mt-1">Unggul</p>
+                                </div>
+                                <div class="bg-gray-50 border border-gray-100 p-4 rounded-2xl text-center hover:bg-white hover:shadow-md transition">
+                                    <div class="text-3xl text-usmDark mb-2"><i class="fas fa-hard-hat"></i></div>
+                                    <h4 class="font-bold text-sm text-usmDark">F. Teknik</h4>
+                                    <p class="text-xs text-green-600 font-bold mt-1">Baik Sekali</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pimpinan Universitas -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20" data-aos="fade-up">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl font-extrabold text-usmDark mb-4">Pimpinan <span class="text-usmLight">Universitas</span></h2>
+                <div class="h-1.5 w-24 bg-gradient-to-r from-usmDark to-usmLight mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Jajaran pimpinan yang menahkodai Universitas Semarang menuju masa depan yang unggul dan bereputasi internasional.</p>
+            </div>
+            
+            <!-- Rektor -->
+            <div class="flex justify-center mb-12">
+                <div class="group relative w-80 bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 border border-gray-100">
+                    <div class="h-80 w-full overflow-hidden bg-gray-100">
+                        <img src="assets/usm_rektor.png" alt="Rektor USM" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
+                    </div>
+                    <div class="p-6 text-center relative bg-white">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-usmDark to-blue-800 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                            <i class="fas fa-star text-usmLight text-xl"></i>
+                        </div>
+                        <h4 class="font-display font-bold text-xl text-usmDark mt-4 mb-1">Dr. Supari, S.T., M.T.</h4>
+                        <p class="text-sm text-usmLight font-bold uppercase tracking-widest">Rektor USM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wakil Rektor -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- WR I -->
+                <div class="group bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 w-full overflow-hidden bg-gray-100 relative">
+                        <img src="assets/usm_wr1.png" alt="Wakil Rektor I" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-5 text-center bg-white relative -mt-6 rounded-t-3xl pt-8">
+                        <h4 class="font-display font-bold text-lg text-usmDark mb-1 line-clamp-1">Prof. Dr. Ir. Sri Budi Wahjuningsih, M.P.</h4>
+                        <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Wakil Rektor I (Akademik)</p>
+                    </div>
+                </div>
+
+                <!-- WR II -->
+                <div class="group bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 w-full overflow-hidden bg-gray-100 relative">
+                        <img src="assets/usm_wr2.png" alt="Wakil Rektor II" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-5 text-center bg-white relative -mt-6 rounded-t-3xl pt-8">
+                        <h4 class="font-display font-bold text-lg text-usmDark mb-1 line-clamp-1">Dr. Titin Winarti, S.Kom., M.M.</h4>
+                        <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Wakil Rektor II (Keuangan)</p>
+                    </div>
+                </div>
+
+                <!-- WR III -->
+                <div class="group bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 w-full overflow-hidden bg-gray-100 relative">
+                        <img src="assets/usm_wr3.png" alt="Wakil Rektor III" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    </div>
+                    <div class="p-5 text-center bg-white relative -mt-6 rounded-t-3xl pt-8">
+                        <h4 class="font-display font-bold text-lg text-usmDark mb-1 line-clamp-1">Dr. Muhammad Junaidi, S.HI., M.H.</h4>
+                        <p class="text-xs text-gray-500 font-semibold uppercase tracking-wider">Wakil Rektor III (Kemahasiswaan)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <app-footer base-path=""></app-footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
+        
+
+        
+    </script>
+</body>
+</html>

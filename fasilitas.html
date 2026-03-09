@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas - Universitas Semarang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { usmLight: '#ffb607', usmDark: '#00508f' }, fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] }}}}
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+        .page-header { background: linear-gradient(to right, rgba(0, 80, 143, 0.9), rgba(0, 80, 143, 0.7)), url('assets/usm_facilities.png'); background-size: cover; background-position: center; padding-top: 10rem; padding-bottom: 5rem; }
+    </style>
+    <script src="assets/components.js" defer></script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white overflow-x-hidden">
+
+    <!-- Navbar -->
+    <app-header base-path=""></app-header>
+
+    <header class="page-header text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center" data-aos="fade-up">
+            <h1 class="font-display text-4xl md:text-5xl font-extrabold mb-4">Fasilitas <span class="text-usmLight">Kampus</span></h1>
+            <div class="h-1 w-20 bg-usmLight mx-auto rounded-full mb-6"></div>
+            <p class="text-xl max-w-2xl mx-auto text-gray-200">Lingkungan belajar yang nyaman dan memadai untuk menunjang kegiatan akademik maupun non-akademik.</p>
+        </div>
+    </header>
+
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_library.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Perpustakaan Pusat</h3>
+                    <p class="text-gray-600 text-sm">Gedung perpustakaan 6 lantai dilengkapi dengan ribuan koleksi buku, jurnal digital, ruang diskusi interaktif, dan free Wi-Fi.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_laboratory.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Laboratorium Komputer</h3>
+                    <p class="text-gray-600 text-sm">Laboratorium modern yang tersertifikasi untuk ujian kompetensi TI, pengembangan software, dan desain multimedia.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_sports_arena.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Gelora Prof. Sudarto, S.H.</h3>
+                    <p class="text-gray-600 text-sm">Gedung olahraga indoor multifungsi yang digunakan untuk olahraga mahasiswa, wisuda, dan event-event besar kampus.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_mosque.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Masjid Baitur Rasyid</h3>
+                    <p class="text-gray-600 text-sm">Masjid besar kampus yang nyaman dilengkapi AC untuk kegiatan ibadah utama dan kajian kerohanian Islam mahasiswa.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_clinic.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Klinik Kesehatan (USM Medical)</h3>
+                    <p class="text-gray-600 text-sm">Fasilitas pelayanan kesehatan pertama untuk mahasiswa dan staf yang berjaga dengan dokter serta paramedis profesional.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_parking.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Area Parkir Terpadu</h3>
+                    <p class="text-gray-600 text-sm">Fasilitas lahan parkir yang luas, rindang, dan aman dengan sistem keamanan 24 jam penuh untuk kendaraan mahasiswa.</p>
+                </div>
+            </div>
+
+            <!-- New Facilities -->
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_auditorium.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Gedung Auditorium</h3>
+                    <p class="text-gray-600 text-sm">Auditorium modern berskala besar untuk seminar nasional, konferensi internasional, dan berbagai pertunjukan seni.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_foodcourt.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Food Court Mahasiswa</h3>
+                    <p class="text-gray-600 text-sm">Kantin yang bersih dan luas dengan berbagai pilihan kuliner lezat yang ramah kantong bagi mahasiswa.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_student_center.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Pusat Kegiatan Mahasiswa</h3>
+                    <p class="text-gray-600 text-sm">Gedung Student Center (SC) yang menjadi pusat kegiatan berbagai Unit Kegiatan Mahasiswa (UKM) dan organisasi kemahasiswaan.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_dormitory.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Asrama Kampus</h3>
+                    <p class="text-gray-600 text-sm">Fasilitas hunian mahasiswa (Rusunawa) yang nyaman, bersih, dan aman, dikhususkan bagi mahasiswa dari luar kota.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_studio.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Studio Penyiaran & Podcast</h3>
+                    <p class="text-gray-600 text-sm">Studio multimedia pro untuk praktik penyiaran radio kampus, pembuatan video edukasi, kreatifitas, dan podcast.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 bg-gray-300 relative">
+                    <img src="assets/usm_coworking.png" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-display text-xl font-bold text-usmDark mb-2">Co-working Space & Lounge</h3>
+                    <p class="text-gray-600 text-sm">Ruang diskusi santai dengan fasilitas internet berkecepatan tinggi yang dirancang untuk mendukung kolaborasi mahasiswa.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <app-footer base-path=""></app-footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
+        
+
+        
+    </script>
+</body>
+</html>

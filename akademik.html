@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akademik - Universitas Semarang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { usmLight: '#ffb607', usmDark: '#00508f' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], display: ['Outfit', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+        .page-header { background: linear-gradient(to right, rgba(0, 80, 143, 0.9), rgba(0, 80, 143, 0.7)), url('assets/usm_campus.png'); background-size: cover; background-position: center; padding-top: 10rem; padding-bottom: 5rem; }
+    </style>
+    <script src="assets/components.js" defer></script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50 overflow-x-hidden">
+
+    <!-- Navbar -->
+    <app-header base-path=""></app-header>
+
+    <!-- Page Header -->
+    <header class="page-header text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
+            <h1 class="font-display text-4xl md:text-5xl font-extrabold mb-4">Fakultas & <span class="text-usmLight">Program Studi</span></h1>
+            <div class="h-1 w-20 bg-usmLight mx-auto rounded-full mb-6"></div>
+            <p class="text-xl max-w-2xl mx-auto text-gray-200">Terdapat puluhan pilihan program studi unggulan yang dirancang relevan dengan kebutuhan industri saat ini.</p>
+        </div>
+    </header>
+
+    <!-- Content Sections -->
+    <main class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="space-y-20">
+            
+            <!-- Fakultas Hukum -->
+            <section data-aos="fade-up">
+                <div class="flex items-center gap-4 mb-8 border-b-2 border-gray-100 pb-4">
+                    <div class="w-12 h-12 bg-usmDark text-white rounded-xl flex items-center justify-center text-2xl shadow-md"><i class="fas fa-scale-balanced"></i></div>
+                    <h2 class="font-display text-3xl font-extrabold text-usmDark">Fakultas Hukum</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Ilmu Hukum</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Mempelajari fundamental sistem perundang-undangan dan tata hukum di Indonesia, hukum pidana, perdata, tata negara, hingga hukum internasional untuk mencetak praktisi hukum, pengacara, dan birokrat yang menjunjung keadilan.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmDark transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S2 Magister Hukum</h3>
+                            <span class="bg-purple-50 text-purple-600 border border-purple-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Magister (S2)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Program pascasarjana lanjutan dengan fokus riset mendalam pada isu-isu hukum kontemporer, kajian kebijakan publik, dan keahlian mediasi tingkat lanjut untuk melahirkan akademisi dan penegak hukum kelas atas.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fakultas Ekonomi -->
+            <section data-aos="fade-up">
+                <div class="flex items-center gap-4 mb-8 border-b-2 border-gray-100 pb-4">
+                    <div class="w-12 h-12 bg-usmDark text-white rounded-xl flex items-center justify-center text-2xl shadow-md"><i class="fas fa-chart-line"></i></div>
+                    <h2 class="font-display text-3xl font-extrabold text-usmDark">Fakultas Ekonomi</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">D3 Manajemen Perusahaan</h3>
+                            <span class="bg-green-50 text-green-600 border border-green-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Diploma (D3)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Program vokasi intensif siap kerja yang membekali mahasiswa dengan keterampilan taktis operasional bisnis, administrasi perkantoran, dan kewirausahaan aplikatif. Lulusan dipersiapkan untuk langsung terjun ke industri.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors mt-auto">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Manajemen</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Mempelajari strategi holistik pengelolaan organisasi, manajemen sumber daya manusia, riset pemasaran, dan pengambilan keputusan manajerial berbasis analisis data yang akurat demi efisiensi perusahaan.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Akuntansi</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Mencetak akuntan profesional andal dengan pemahaman kuat terkait keahlian pelaporan keuangan standar IFRS, proses audit independen, manajemen perpajakan korporat, dan penguasaan sistem informasi akuntansi.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmDark transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S2 Magister Manajemen</h3>
+                            <span class="bg-purple-50 text-purple-600 border border-purple-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Magister (S2)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Program pascasarjana intensif untuk mencetak manajer tingkat atas (C-Level) yang visioner, terfokus pada kemampuan analisis strategis permasalahan bisnis global yang kompleks dan dinamis.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                    
+                    <!-- S3 -->
+                    <div class="bg-usmDark/5 border border-usmDark/10 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden lg:col-span-2">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmDark transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-2xl text-usmDark transition-colors">S3 Doktor Ilmu Manajemen</h3>
+                            <span class="bg-gray-800 text-white border border-gray-700 text-[10px] uppercase font-bold px-3 py-1 rounded-full"><i class="fas fa-award mr-1 text-usmLight"></i>Doktoral (S3)</span>
+                        </div>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">Level pendidikan tertinggi untuk menciptakan ilmuwan tingkat lanjut, konsultan ahli, dan pemikir strategi manajemen yang berkontribusi menemukan teori dan pendekatan keilmuan baru di bidang manajemen multidisipliner.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fakultas Teknik -->
+            <section data-aos="fade-up">
+                <div class="flex items-center gap-4 mb-8 border-b-2 border-gray-100 pb-4">
+                    <div class="w-12 h-12 bg-usmDark text-white rounded-xl flex items-center justify-center text-2xl shadow-md"><i class="fas fa-hard-hat"></i></div>
+                    <h2 class="font-display text-3xl font-extrabold text-usmDark">Fakultas Teknik</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Teknik Sipil</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Mempelajari perancangan konseptual, simulasi struktur, spesifikasi material, pelaksanaan konstruksi, dan pemeliharaan infrastruktur seperti gedung pencakar langit, jalan raya, bendungan, dan jembatan dengan standar keamanan tinggi.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmDark transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S2 Magister Teknik Sipil</h3>
+                            <span class="bg-purple-50 text-purple-600 border border-purple-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Magister (S2)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Eksplorasi manajemen proyek tingkat lanjut, mitigasi bencana konstruksi, dan rekayasa struktural kompleks untuk lulusan sarjana yang ingin menajamkan kompetensi sebagai manajer konstruksi atau perancang ahli.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Elektro</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Mendalami rekayasa sistem kelistrikan terbarukan, elektronika industri mekanik, arus kuat, hingga mikrokontroler dan kendali otomatis (IoT) yang sangat relevan dengan kebutuhan industri di era Society 5.0.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Perencanaan Wilayah dan Kota</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Ilmu Planologi interdisipliner; mengkombinasikan geografi spasial, sosiologi, dan teknik pelestarian untuk merancang tata rias ruang kota masa depan yang estetik, berkelanjutan, logistik efisien, dan ramah demografi.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Fakultas TIK -->
+            <section data-aos="fade-up">
+                <div class="flex items-center gap-4 mb-8 border-b-2 border-gray-100 pb-4">
+                    <div class="w-12 h-12 bg-usmDark text-white rounded-xl flex items-center justify-center text-2xl shadow-md"><i class="fas fa-laptop-code"></i></div>
+                    <h2 class="font-display text-3xl font-extrabold text-usmDark">Fakultas TIK</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg xl:text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Sistem Informasi</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full whitespace-nowrap">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Menjembatani antara kebutuhan efisiensi bisnis korporat dan solusi teknologi IT komputasi, merancang arsitektur sistem informasi, aliran data raksasa (Big Data), hingga pelaporan Business Intelligence.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors mt-auto">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg xl:text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Teknik Informatika</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full whitespace-nowrap">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Sangat teknis dan coding-sentris. Fokus mencetak pakar pengembangan perangkat lunak (Mobile/Web), model kecerdasan buatan (AI/Machine Learning), topologi infrastruktur jaringan interkoneksi, serta manajemen keamanan Siber mumpuni.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors mt-auto">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg xl:text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Ilmu Komunikasi</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full whitespace-nowrap">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Menguasai seni dan strategi persuasi komunikasi massa modern, Public Relations (Humas), teknik jurnalistik cetan dan digital komprehensif, pemasaran digital, dan seni penyiaran broadcast audiovisual kekinian.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors mt-auto">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-lg xl:text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Pariwisata</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full whitespace-nowrap">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Menjawab kebutuhan industri rekreasi. Mencetak sarjana ahli manajemen terpadu destinasi wisata, manajemen industri perhotelan elit, agen tour & travel berskala internasional, hingga event organizer berstandar global industri hospitalitas.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors mt-auto">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Fakultas Psikologi -->
+            <section data-aos="fade-up">
+                <div class="flex items-center gap-4 mb-8 border-b-2 border-gray-100 pb-4">
+                    <div class="w-12 h-12 bg-usmDark text-white rounded-xl flex items-center justify-center text-2xl shadow-md"><i class="fas fa-brain"></i></div>
+                    <h2 class="font-display text-3xl font-extrabold text-usmDark">Fakultas Psikologi</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Psikologi</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Laboratorium manusia; Mengkaji perilaku neurotika dan perilaku sosial serta berbagai proses mental kognitf untuk diaplikasikan ke dalam pemecahan problema harian seperti psikologi diagnostik klinis, konseling pendidikan, sosial budaya, dan psikologi Industri & Organisasi (SDM korporat).</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmDark transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S2 Magister Psikologi</h3>
+                            <span class="bg-purple-50 text-purple-600 border border-purple-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Magister (S2)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Program saintifik terapan pascasarjana yang khusus memperdalam metode asesmen dan penanganan intervensi psikologis kompleks tingkat mahir untuk menyelesaikan rentetan permasalahan rumit dan unik dalam dinamika sosiologis masyarakat modern dewasa ini.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Fakultas Teknologi Pertanian -->
+            <section data-aos="fade-up">
+                <div class="flex items-center gap-4 mb-8 border-b-2 border-gray-100 pb-4">
+                    <div class="w-12 h-12 bg-usmDark text-white rounded-xl flex items-center justify-center text-2xl shadow-md"><i class="fas fa-leaf"></i></div>
+                    <h2 class="font-display text-3xl font-extrabold text-usmDark">Fakultas Teknologi Pertanian</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 group relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-1 h-full bg-usmLight transform scale-y-0 group-hover:scale-y-100 transition-transform origin-bottom duration-300"></div>
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="font-bold text-xl text-gray-800 group-hover:text-usmDark transition-colors">S1 Teknologi Hasil Pertanian</h3>
+                            <span class="bg-blue-50 text-blue-600 border border-blue-100 text-[10px] uppercase font-bold px-3 py-1 rounded-full">Sarjana (S1)</span>
+                        </div>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Ahli dalam proses pengolahan bahan nabati/hewani. Berfokus membedah inovasi teknologi pengelolaan serta metode optimal pengawetan komoditas pascapanen, teknik rekayasa modifikasi produk pangan higienis modern, dan penjaminan kualitas mutu dan pengendalian toksikologi atau keamanan mikrobiologi pangan secara laborat.</p>
+                        <a href="#" class="text-usmDark text-sm font-bold flex items-center gap-2 group-hover:text-usmLight transition-colors">Pelajari Lebih Lanjut <i class="fas fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <app-footer base-path=""></app-footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 50, duration: 800, easing: 'ease-out-cubic' });
+        
+
+        
+    </script>
+</body>
+</html>

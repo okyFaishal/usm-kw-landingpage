@@ -1,0 +1,1358 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universitas Semarang - Menjemput Masa Depan Unggul</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              usmLight: "#ffb607",
+              usmDark: "#00508f",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+      .hover-lift {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+      .hover-lift:hover {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow:
+          0 25px 30px -5px rgba(0, 80, 143, 0.15),
+          0 15px 15px -5px rgba(0, 80, 143, 0.1);
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+      .animate-float {
+        animation: float 5s ease-in-out infinite;
+      }
+      @keyframes pulse-ring {
+        0% {
+          transform: scale(0.8);
+          box-shadow: 0 0 0 0 rgba(255, 182, 7, 0.8);
+        }
+        70% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 20px rgba(255, 182, 7, 0);
+        }
+        100% {
+          transform: scale(0.8);
+          box-shadow: 0 0 0 0 rgba(255, 182, 7, 0);
+        }
+      }
+      .pulse-btn {
+        animation: pulse-ring 2.5s infinite cubic-bezier(0.66, 0, 0, 1);
+      }
+      .bg-pattern {
+        background-image: radial-gradient(
+          rgba(0, 80, 143, 0.05) 2px,
+          transparent 2px
+        );
+        background-size: 30px 30px;
+      }
+    </style>
+    <script src="assets/components.js" defer></script>
+  </head>
+  <body
+    class="font-sans antialiased text-gray-800 bg-gray-50 overflow-x-hidden"
+  >
+    <!-- Navbar -->
+    <app-header base-path=""></app-header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative h-screen min-h-[700px] flex items-center justify-center pt-20 overflow-hidden parallax group"
+      style="background-image: url(&quot;assets/usm_campus.png&quot;)"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-usmDark via-usmDark/80 to-transparent transition-opacity duration-700 opacity-90 group-hover:opacity-100"
+      ></div>
+      <div class="absolute inset-0 bg-usmLight/10 mix-blend-overlay"></div>
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-16 text-center md:text-left"
+      >
+        <div
+          class="max-w-3xl mx-auto md:mx-0"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+        >
+          <div
+            class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-usmLight to-yellow-300 text-usmDark font-extrabold px-5 py-2 rounded-full text-xs tracking-widest mb-6 animate-float shadow-lg shadow-usmLight/20 mx-auto md:mx-0"
+          >
+            <i class="fas fa-star text-[10px]"></i> #USMJAYA
+            <i class="fas fa-star text-[10px]"></i>
+          </div>
+          <h1
+            class="font-display text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 drop-shadow-2xl"
+          >
+            MENJEMPUT MASA DEPAN UNGGUL DI
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-usmLight via-yellow-300 to-white hidden md:inline"
+              >UNIVERSITAS SEMARANG</span
+            ><span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-usmLight via-yellow-300 to-white block md:hidden"
+              >USM</span
+            >
+          </h1>
+          <p
+            class="text-xl md:text-2xl text-gray-100 mb-10 font-light tracking-wide border-l-0 md:border-l-4 border-usmLight pl-0 md:pl-6 py-2 bg-transparent md:bg-gradient-to-r from-usmDark/50 to-transparent rounded-r-xl"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            KAMPUS UNGGUL DENGAN SPIRIT JAYA
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-center md:justify-start gap-5"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <a
+              href="pendaftaran.html"
+              class="pulse-btn bg-gradient-to-r from-usmLight to-yellow-500 hover:from-yellow-400 hover:to-yellow-600 text-usmDark px-9 py-4 rounded-full font-bold text-lg text-center shadow-xl shadow-usmLight/30 transition-all duration-300 transform flex items-center justify-center gap-3 w-full sm:w-auto"
+            >
+              DAFTAR SEKARANG
+              <i
+                class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
+            <a
+              href="profil.html"
+              class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 hover:border-usmLight/50 text-white px-9 py-4 rounded-full font-semibold text-lg text-center transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-usmLight/20 flex items-center justify-center w-full sm:w-auto"
+            >
+              PELAJARI LEBIH LANJUT
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce text-white/70"
+      >
+        <span class="text-xs tracking-widest uppercase mb-2">Jelajahi</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- Quick Navigation Features Grid -->
+    <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-pattern">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="font-display text-4xl font-extrabold text-usmDark mb-4">
+          Mengenal Lebih Dekat
+        </h2>
+        <div
+          class="h-1.5 w-24 bg-gradient-to-r from-usmDark to-usmLight mx-auto rounded-full"
+        ></div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10"
+      >
+        <a
+          href="profil.html"
+          class="block bg-white p-8 rounded-3xl shadow-sm hover-lift border border-gray-100/50 group text-center relative overflow-hidden"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div
+            class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-usmLight/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-2xl flex items-center justify-center mb-6 text-usmDark text-3xl mx-auto group-hover:bg-gradient-to-br group-hover:from-usmDark group-hover:to-blue-900 group-hover:text-usmLight transition-all duration-500 shadow-inner"
+          >
+            <i class="fas fa-building-columns"></i>
+          </div>
+          <h3
+            class="font-display text-xl font-bold mb-3 text-usmDark group-hover:text-blue-700 transition-colors"
+          >
+            Profil USM
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Sejarah, visi misi, serta tata struktural universitas secara
+            komprehensif.
+          </p>
+        </a>
+
+        <a
+          href="akademik.html"
+          class="block bg-white p-8 rounded-3xl shadow-sm hover-lift border border-gray-100/50 group text-center relative overflow-hidden"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-usmLight/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-2xl flex items-center justify-center mb-6 text-usmDark text-3xl mx-auto group-hover:bg-gradient-to-br group-hover:from-usmDark group-hover:to-blue-900 group-hover:text-usmLight transition-all duration-500 shadow-inner"
+          >
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3
+            class="font-display text-xl font-bold mb-3 text-usmDark group-hover:text-blue-700 transition-colors"
+          >
+            Akademik
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Informasi lengkap terkait fakultas, program studi S1/D3, dan
+            Pascasarjana.
+          </p>
+        </a>
+
+        <a
+          href="fasilitas.html"
+          class="block bg-white p-8 rounded-3xl shadow-sm hover-lift border border-gray-100/50 group text-center relative overflow-hidden"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div
+            class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-usmLight/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-2xl flex items-center justify-center mb-6 text-usmDark text-3xl mx-auto group-hover:bg-gradient-to-br group-hover:from-usmDark group-hover:to-blue-900 group-hover:text-usmLight transition-all duration-500 shadow-inner"
+          >
+            <i class="fas fa-book-reader"></i>
+          </div>
+          <h3
+            class="font-display text-xl font-bold mb-3 text-usmDark group-hover:text-blue-700 transition-colors"
+          >
+            Fasilitas Kampus
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Dari laboratorium modern, perpustakaan luas, hingga fasilitas
+            olahraga.
+          </p>
+        </a>
+
+        <a
+          href="kemahasiswaan.html"
+          class="block bg-white p-8 rounded-3xl shadow-sm hover-lift border border-gray-100/50 group text-center relative overflow-hidden"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div
+            class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-usmLight/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-2xl flex items-center justify-center mb-6 text-usmDark text-3xl mx-auto group-hover:bg-gradient-to-br group-hover:from-usmDark group-hover:to-blue-900 group-hover:text-usmLight transition-all duration-500 shadow-inner"
+          >
+            <i class="fas fa-users"></i>
+          </div>
+          <h3
+            class="font-display text-xl font-bold mb-3 text-usmDark group-hover:text-blue-700 transition-colors"
+          >
+            Kemahasiswaan
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Eksplorasi organisasi BEM, beragam UKM dan deretan prestasi
+            membanggakan.
+          </p>
+        </a>
+
+        <a
+          href="pendaftaran.html"
+          class="block bg-white p-8 rounded-3xl shadow-sm hover-lift border border-gray-100/50 group text-center relative overflow-hidden"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-usmLight/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-2xl flex items-center justify-center mb-6 text-usmDark text-3xl mx-auto group-hover:bg-gradient-to-br group-hover:from-usmDark group-hover:to-blue-900 group-hover:text-usmLight transition-all duration-500 shadow-inner"
+          >
+            <i class="fas fa-user-plus"></i>
+          </div>
+          <h3
+            class="font-display text-xl font-bold mb-3 text-usmDark group-hover:text-blue-700 transition-colors"
+          >
+            Pendaftaran Mahasiswa
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Informasi jalur pendaftaran, persyaratan, dan jadwal penerimaan
+            mahasiswa baru.
+          </p>
+        </a>
+
+        <a
+          href="biaya.html"
+          class="block bg-white p-8 rounded-3xl shadow-sm hover-lift border border-gray-100/50 group text-center relative overflow-hidden"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div
+            class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-usmLight/20 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          ></div>
+          <div
+            class="w-20 h-20 bg-gradient-to-br from-blue-50 to-blue-100/50 rounded-2xl flex items-center justify-center mb-6 text-usmDark text-3xl mx-auto group-hover:bg-gradient-to-br group-hover:from-usmDark group-hover:to-blue-900 group-hover:text-usmLight transition-all duration-500 shadow-inner"
+          >
+            <i class="fas fa-wallet"></i>
+          </div>
+          <h3
+            class="font-display text-xl font-bold mb-3 text-usmDark group-hover:text-blue-700 transition-colors"
+          >
+            Biaya Pendidikan
+          </h3>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Rincian biaya kuliah per semester untuk masing-masing fakultas dan
+            program studi.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- City Information Section -->
+    <section class="py-20 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="lg:w-1/2" data-aos="fade-right">
+            <h2 class="font-display text-4xl font-extrabold text-usmDark mb-6">
+              Kuliah Nyaman di
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-usmLight to-yellow-500"
+                >Kota Atlas</span
+              >
+            </h2>
+            <div
+              class="h-1.5 w-24 bg-gradient-to-r from-usmDark to-usmLight rounded-full mb-6"
+            ></div>
+            <p class="text-gray-600 leading-relaxed mb-6 text-lg">
+              Semarang tak hanya menjadi ibukota Jawa Tengah, namun juga kota
+              metropolitan yang menyuguhkan perpaduan harmonis antara kekayaan
+              sejarah, budaya, dan modernitas. Biaya hidup yang terjangkau
+              menjadikannya salah satu kota paling ramah untuk pelajar dari
+              seluruh Indonesia.
+            </p>
+            <ul class="space-y-4 text-gray-700 font-medium">
+              <li class="flex items-center gap-3">
+                <i class="fas fa-utensils text-usmLight text-xl w-6"></i> Surga
+                kuliner legendaris dan UMKM
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-train text-usmLight text-xl w-6"></i> Integrasi
+                transportasi umum yang sangat baik (Trans Semarang)
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fas fa-landmark text-usmLight text-xl w-6"></i>
+                Destinasi wisata sejarah ikonik (Lawang Sewu, Kota Lama)
+              </li>
+            </ul>
+          </div>
+          <div
+            class="lg:w-1/2 relative w-full"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div class="grid grid-cols-2 gap-4">
+              <div class="space-y-4 mt-8">
+                <img
+                  src="assets/usm_facilities.png"
+                  alt="Mendukung Kuliah"
+                  class="rounded-3xl shadow-lg w-full h-48 object-cover filter brightness-[0.85] sepia-[0.2]"
+                />
+              </div>
+              <div class="space-y-4">
+                <img
+                  src="assets/semarang_city.png"
+                  alt="Lingkungan Semarang"
+                  class="rounded-3xl shadow-lg w-full h-64 object-cover filter saturate-150"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Proximity Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="font-display text-4xl font-extrabold text-usmDark mb-4">
+            Lokasi <span class="text-usmLight">Strategis</span> di Pusat Kota
+          </h2>
+          <div class="h-1 w-20 bg-usmLight mx-auto rounded-full mb-6"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            Akses mudah dan cepat dari kampus USM ke berbagai landmark utama,
+            pusat transportasi, serta fasilitas publik di kota Semarang.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Terdekat 1 -->
+          <div
+            class="rounded-3xl border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden relative group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="absolute inset-0 z-0">
+              <img
+                src="assets/semarang_mosque.png"
+                alt="Masjid Agung Jawa Tengah"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#00508f]/90 via-[#00508f]/50 to-transparent z-10 opacity-90 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div
+              class="relative z-20 p-6 flex flex-col h-full min-h-[220px] justify-end"
+            >
+              <h3
+                class="font-display font-bold text-white text-xl mb-1 drop-shadow-md"
+              >
+                Masjid Agung Jateng
+              </h3>
+              <div class="flex items-end gap-2 text-[#ffb607]">
+                <span class="text-3xl font-extrabold drop-shadow-md">2</span
+                ><span class="text-sm font-semibold mb-1 drop-shadow-md"
+                  >km</span
+                >
+              </div>
+              <p class="text-xs text-gray-200 mt-2 font-medium">
+                <i class="fas fa-car mr-1 text-[#ffb607]"></i> ± 5 menit
+                berkendara
+              </p>
+            </div>
+          </div>
+
+          <!-- Terdekat 2 -->
+          <div
+            class="rounded-3xl border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden relative group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="absolute inset-0 z-0">
+              <img
+                src="assets/semarang_mall.png"
+                alt="Mall Terdekat"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#00508f]/90 via-[#00508f]/50 to-transparent z-10 opacity-90 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div
+              class="relative z-20 p-6 flex flex-col h-full min-h-[220px] justify-end"
+            >
+              <h3
+                class="font-display font-bold text-white text-xl mb-1 drop-shadow-md"
+              >
+                Central City Mall
+              </h3>
+              <div class="flex items-end gap-2 text-[#ffb607]">
+                <span class="text-3xl font-extrabold drop-shadow-md">3</span
+                ><span class="text-sm font-semibold mb-1 drop-shadow-md"
+                  >km</span
+                >
+              </div>
+              <p class="text-xs text-gray-200 mt-2 font-medium">
+                <i class="fas fa-car mr-1 text-[#ffb607]"></i> ± 8 menit
+                berkendara
+              </p>
+            </div>
+          </div>
+
+          <!-- Terdekat 3 -->
+          <div
+            class="rounded-3xl border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden relative group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="absolute inset-0 z-0">
+              <img
+                src="assets/semarang_simpang_lima.png"
+                alt="Simpang Lima"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#00508f]/90 via-[#00508f]/50 to-transparent z-10 opacity-90 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div
+              class="relative z-20 p-6 flex flex-col h-full min-h-[220px] justify-end"
+            >
+              <h3
+                class="font-display font-bold text-white text-xl mb-1 drop-shadow-md"
+              >
+                Simpang Lima
+              </h3>
+              <div class="flex items-end gap-2 text-[#ffb607]">
+                <span class="text-3xl font-extrabold drop-shadow-md">5</span
+                ><span class="text-sm font-semibold mb-1 drop-shadow-md"
+                  >km</span
+                >
+              </div>
+              <p class="text-xs text-gray-200 mt-2 font-medium">
+                <i class="fas fa-car mr-1 text-[#ffb607]"></i> ± 12 menit
+                berkendara
+              </p>
+            </div>
+          </div>
+
+          <!-- Terdekat 4 -->
+          <div
+            class="rounded-3xl border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden relative group"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="absolute inset-0 z-0">
+              <img
+                src="assets/semarang_bus_terminal.png"
+                alt="Terminal Terdekat"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#00508f]/90 via-[#00508f]/50 to-transparent z-10 opacity-90 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div
+              class="relative z-20 p-6 flex flex-col h-full min-h-[220px] justify-end"
+            >
+              <h3
+                class="font-display font-bold text-white text-xl mb-1 drop-shadow-md"
+              >
+                Terminal Terdekat
+              </h3>
+              <div class="flex items-end gap-2 text-[#ffb607]">
+                <span class="text-3xl font-extrabold drop-shadow-md">6</span
+                ><span class="text-sm font-semibold mb-1 drop-shadow-md"
+                  >km</span
+                >
+              </div>
+              <p class="text-xs text-gray-200 mt-2 font-medium">
+                <i class="fas fa-car mr-1 text-[#ffb607]"></i> ± 15 menit
+                berkendara
+              </p>
+            </div>
+          </div>
+
+          <!-- Terdekat 5 -->
+          <div
+            class="rounded-3xl border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden relative group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="absolute inset-0 z-0">
+              <img
+                src="assets/semarang_kota_lama.png"
+                alt="Kawasan Wisata Kota Lama"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#00508f]/90 via-[#00508f]/50 to-transparent z-10 opacity-90 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div
+              class="relative z-20 p-6 flex flex-col h-full min-h-[220px] justify-end"
+            >
+              <h3
+                class="font-display font-bold text-white text-xl mb-1 drop-shadow-md"
+              >
+                Kawasan Kota Lama
+              </h3>
+              <div class="flex items-end gap-2 text-[#ffb607]">
+                <span class="text-3xl font-extrabold drop-shadow-md">6.5</span
+                ><span class="text-sm font-semibold mb-1 drop-shadow-md"
+                  >km</span
+                >
+              </div>
+              <p class="text-xs text-gray-200 mt-2 font-medium">
+                <i class="fas fa-car mr-1 text-[#ffb607]"></i> ± 15 menit
+                berkendara
+              </p>
+            </div>
+          </div>
+
+          <!-- Terdekat 6 -->
+          <div
+            class="rounded-3xl border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden relative group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="absolute inset-0 z-0">
+              <img
+                src="assets/semarang_train_station.png"
+                alt="Stasiun Tawang"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#00508f]/90 via-[#00508f]/50 to-transparent z-10 opacity-90 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div
+              class="relative z-20 p-6 flex flex-col h-full min-h-[220px] justify-end"
+            >
+              <h3
+                class="font-display font-bold text-white text-xl mb-1 drop-shadow-md"
+              >
+                Stasiun Tawang
+              </h3>
+              <div class="flex items-end gap-2 text-[#ffb607]">
+                <span class="text-3xl font-extrabold drop-shadow-md">7</span
+                ><span class="text-sm font-semibold mb-1 drop-shadow-md"
+                  >km</span
+                >
+              </div>
+              <p class="text-xs text-gray-200 mt-2 font-medium">
+                <i class="fas fa-car mr-1 text-[#ffb607]"></i> ± 18 menit
+                berkendara
+              </p>
+            </div>
+          </div>
+
+          <!-- Terdekat 7 -->
+          <div
+            class="rounded-3xl border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden relative group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="absolute inset-0 z-0">
+              <img
+                src="assets/semarang_port.png"
+                alt="Pelabuhan Tanjung Emas"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#00508f]/90 via-[#00508f]/50 to-transparent z-10 opacity-90 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div
+              class="relative z-20 p-6 flex flex-col h-full min-h-[220px] justify-end"
+            >
+              <h3
+                class="font-display font-bold text-white text-xl mb-1 drop-shadow-md"
+              >
+                Pelabuhan Tanjung Emas
+              </h3>
+              <div class="flex items-end gap-2 text-[#ffb607]">
+                <span class="text-3xl font-extrabold drop-shadow-md">9</span
+                ><span class="text-sm font-semibold mb-1 drop-shadow-md"
+                  >km</span
+                >
+              </div>
+              <p class="text-xs text-gray-200 mt-2 font-medium">
+                <i class="fas fa-car mr-1 text-[#ffb607]"></i> ± 25 menit
+                berkendara
+              </p>
+            </div>
+          </div>
+
+          <!-- Terdekat 8 -->
+          <div
+            class="rounded-3xl border border-gray-100/50 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 overflow-hidden relative group"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="absolute inset-0 z-0">
+              <img
+                src="assets/semarang_airport.png"
+                alt="Bandara Ahmad Yani"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#00508f]/90 via-[#00508f]/50 to-transparent z-10 opacity-90 group-hover:opacity-100 transition duration-300"
+            ></div>
+            <div
+              class="relative z-20 p-6 flex flex-col h-full min-h-[220px] justify-end"
+            >
+              <h3
+                class="font-display font-bold text-white text-xl mb-1 drop-shadow-md"
+              >
+                Bandara Ahmad Yani
+              </h3>
+              <div class="flex items-end gap-2 text-[#ffb607]">
+                <span class="text-3xl font-extrabold drop-shadow-md">12</span
+                ><span class="text-sm font-semibold mb-1 drop-shadow-md"
+                  >km</span
+                >
+              </div>
+              <p class="text-xs text-gray-200 mt-2 font-medium">
+                <i class="fas fa-car mr-1 text-[#ffb607]"></i> ± 30 menit
+                berkendara
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 text-center" data-aos="fade-up">
+          <p
+            class="inline-flex items-center gap-2 text-sm text-gray-600 bg-gray-100 px-4 py-2 rounded-full font-medium"
+          >
+            <i class="fas fa-info-circle text-usmLight"></i> Halte BRT Trans
+            Semarang terdekat berada tepat di depan gerbang utama kampus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-20 bg-usmDark text-white relative overflow-hidden group">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-usmDark via-[#00386b] to-usmDark opacity-90"
+      ></div>
+      <div class="absolute inset-0 bg-usmLight/5 mix-blend-overlay"></div>
+      <!-- Decorative blob -->
+      <div
+        class="absolute -top-24 -right-24 w-96 h-96 bg-usmLight/10 rounded-full blur-3xl group-hover:bg-usmLight/20 transition-colors duration-700"
+      ></div>
+      <div
+        class="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-colors duration-700"
+      ></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="font-display text-4xl font-extrabold mb-4 drop-shadow-lg">
+            Mengapa Memilih USM?
+          </h2>
+          <div
+            class="h-1.5 w-24 bg-gradient-to-r from-usmLight to-yellow-300 mx-auto rounded-full"
+          ></div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div data-aos="zoom-in" data-aos-delay="100">
+            <div
+              class="text-5xl md:text-6xl font-display font-extrabold text-usmLight mb-3"
+            >
+              35+
+            </div>
+            <p
+              class="text-gray-300 font-semibold uppercase tracking-wider text-sm"
+            >
+              Tahun Mengabdi
+            </p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="200">
+            <div
+              class="text-5xl md:text-6xl font-display font-extrabold text-usmLight mb-3"
+            >
+              20K+
+            </div>
+            <p
+              class="text-gray-300 font-semibold uppercase tracking-wider text-sm"
+            >
+              Mahasiswa Aktif
+            </p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="300">
+            <div
+              class="text-5xl md:text-6xl font-display font-extrabold text-usmLight mb-3"
+            >
+              15
+            </div>
+            <p
+              class="text-gray-300 font-semibold uppercase tracking-wider text-sm"
+            >
+              Program Studi
+            </p>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="400">
+            <div
+              class="text-5xl md:text-6xl font-display font-extrabold text-usmLight mb-3"
+            >
+              40K+
+            </div>
+            <p
+              class="text-gray-300 font-semibold uppercase tracking-wider text-sm"
+            >
+              Alumni Sukses
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 gap-6 text-center md:text-left"
+          data-aos="fade-up"
+        >
+          <div class="w-full">
+            <h2
+              class="font-display text-4xl md:text-5xl font-extrabold text-usmDark mb-4"
+            >
+              Berita
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-usmLight to-yellow-500"
+                >Terbaru</span
+              >
+            </h2>
+            <div
+              class="h-1.5 w-24 bg-gradient-to-r from-usmDark to-usmLight mx-auto md:mx-0 rounded-full"
+            ></div>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- News 1 -->
+          <article
+            class="bg-white rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden hover-lift group relative"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-usmLight/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
+            ></div>
+            <div class="h-56 bg-gray-300 overflow-hidden relative z-10">
+              <img
+                src="assets/usm_news_robot.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+              <div
+                class="absolute top-4 left-4 bg-usmLight/90 backdrop-blur-sm text-usmDark text-xs font-bold px-4 py-1.5 rounded-full shadow-lg border border-usmLight/50"
+              >
+                PRESTASI
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-usmDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-8 relative z-10">
+              <p
+                class="text-xs text-gray-500 mb-3 font-semibold flex items-center"
+              >
+                <i class="far fa-calendar-alt mr-2 text-usmLight text-sm"></i>12
+                Mar 2024
+              </p>
+              <h3
+                class="font-display font-bold text-usmDark text-xl mb-3 line-clamp-2 group-hover:text-usmLight transition-colors cursor-pointer leading-tight"
+              >
+                <a
+                  href="berita/berita-1.html"
+                  class="before:absolute before:inset-0"
+                  >Mahasiswa Teknik USM Raih Emas di Kontes Robotik Nasional</a
+                >
+              </h3>
+              <p
+                class="text-gray-600 text-sm line-clamp-3 mb-6 leading-relaxed"
+              >
+                Tim Robotika Universitas Semarang berhasil menyisihkan puluhan
+                universitas lainnya pada kompetisi yang digelar di Jakarta.
+                Inovasi robot pemadam api pintar ini memukau para juri.
+              </p>
+              <span
+                class="text-sm font-bold text-usmDark group-hover:text-usmLight inline-flex items-center group/link relative z-20"
+                >Baca Selengkapnya
+                <i
+                  class="fas fa-angle-right ml-2 text-xs transition-transform group-hover/link:translate-x-1"
+                ></i
+              ></span>
+            </div>
+          </article>
+
+          <!-- News 2 -->
+          <article
+            class="bg-white rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden hover-lift group relative"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-usmLight/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
+            ></div>
+            <div class="h-56 bg-gray-300 overflow-hidden relative z-10">
+              <img
+                src="assets/usm_facilities.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+              <div
+                class="absolute top-4 left-4 bg-blue-500/90 backdrop-blur-sm text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg border border-blue-400"
+              >
+                INOVASI
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-usmDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-8 relative z-10">
+              <p
+                class="text-xs text-gray-500 mb-3 font-semibold flex items-center"
+              >
+                <i class="far fa-calendar-alt mr-2 text-usmLight text-sm"></i>10
+                Mar 2024
+              </p>
+              <h3
+                class="font-display font-bold text-usmDark text-xl mb-3 line-clamp-2 group-hover:text-usmLight transition-colors cursor-pointer leading-tight"
+              >
+                <a
+                  href="berita/berita-2.html"
+                  class="before:absolute before:inset-0"
+                  >Dosen USM Ciptakan Alat Pengolahan Limbah UMKM</a
+                >
+              </h3>
+              <p
+                class="text-gray-600 text-sm line-clamp-3 mb-6 leading-relaxed"
+              >
+                Fakultas Teknologi Pertanian berhasil mengembangkan alat
+                pengolah limbah tahu yang ramah lingkungan. Diharapkan dapat
+                membantu masyarakat lokal Semarang dalam mengelola usahanya
+                secara sustainable.
+              </p>
+              <span
+                class="text-sm font-bold text-usmDark group-hover:text-usmLight inline-flex items-center group/link relative z-20"
+                >Baca Selengkapnya
+                <i
+                  class="fas fa-angle-right ml-2 text-xs transition-transform group-hover/link:translate-x-1"
+                ></i
+              ></span>
+            </div>
+          </article>
+
+          <!-- News 3 -->
+          <article
+            class="bg-white rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden hover-lift group relative"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-usmLight/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
+            ></div>
+            <div class="h-56 bg-gray-300 overflow-hidden relative z-10">
+              <img
+                src="assets/semarang_city.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+              <div
+                class="absolute top-4 left-4 bg-green-500/90 backdrop-blur-sm text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg border border-green-400"
+              >
+                KERJASAMA
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-usmDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-8 relative z-10">
+              <p
+                class="text-xs text-gray-500 mb-3 font-semibold flex items-center"
+              >
+                <i class="far fa-calendar-alt mr-2 text-usmLight text-sm"></i>08
+                Mar 2024
+              </p>
+              <h3
+                class="font-display font-bold text-usmDark text-xl mb-3 line-clamp-2 group-hover:text-usmLight transition-colors cursor-pointer leading-tight"
+              >
+                <a
+                  href="berita/berita-3.html"
+                  class="before:absolute before:inset-0"
+                  >USM Jalin Kerja Sama dengan Universitas Korea</a
+                >
+              </h3>
+              <p
+                class="text-gray-600 text-sm line-clamp-3 mb-6 leading-relaxed"
+              >
+                Nota Kesepahaman telah ditandatangani hari ini untuk program
+                pertukaran mahasiswa dan kolaborasi riset di bidang teknologi
+                informasi. Ini merupakan langkah maju menuju World Class
+                University.
+              </p>
+              <span
+                class="text-sm font-bold text-usmDark group-hover:text-usmLight inline-flex items-center group/link relative z-20"
+                >Baca Selengkapnya
+                <i
+                  class="fas fa-angle-right ml-2 text-xs transition-transform group-hover/link:translate-x-1"
+                ></i
+              ></span>
+            </div>
+          </article>
+
+          <!-- News 4 -->
+          <article
+            class="bg-white rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden hover-lift group relative"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-usmLight/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
+            ></div>
+            <div class="h-56 bg-gray-300 overflow-hidden relative z-10">
+              <img
+                src="assets/usm_campus.png"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+              />
+              <div
+                class="absolute top-4 left-4 bg-purple-500/90 backdrop-blur-sm text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg border border-purple-400"
+              >
+                KAMPUS
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-usmDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-8 relative z-10">
+              <p
+                class="text-xs text-gray-500 mb-3 font-semibold flex items-center"
+              >
+                <i class="far fa-calendar-alt mr-2 text-usmLight text-sm"></i>05
+                Mar 2024
+              </p>
+              <h3
+                class="font-display font-bold text-usmDark text-xl mb-3 line-clamp-2 group-hover:text-usmLight transition-colors cursor-pointer leading-tight"
+              >
+                <a
+                  href="berita/berita-4.html"
+                  class="before:absolute before:inset-0"
+                  >Pembangunan Gedung Pascasarjana Baru Rampung</a
+                >
+              </h3>
+              <p
+                class="text-gray-600 text-sm line-clamp-3 mb-6 leading-relaxed"
+              >
+                Fasilitas gedung berlantai 8 ini kini resmi dapat digunakan oleh
+                mahasiswa Sekolah Pascasarjana. Gedung dilengkapi perpustakaan
+                digital terkini dan ruang diskusi interaktif.
+              </p>
+              <span
+                class="text-sm font-bold text-usmDark group-hover:text-usmLight inline-flex items-center group/link relative z-20"
+                >Baca Selengkapnya
+                <i
+                  class="fas fa-angle-right ml-2 text-xs transition-transform group-hover/link:translate-x-1"
+                ></i
+              ></span>
+            </div>
+          </article>
+
+          <!-- News 5 -->
+          <article
+            class="bg-white rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden hover-lift group relative"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-usmLight/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
+            ></div>
+            <div
+              class="h-56 bg-gray-300 overflow-hidden relative z-10"
+              style="
+                background-image: url(&quot;assets/usm_facilities.png&quot;);
+                background-size: cover;
+                background-position: center;
+                filter: hue-rotate(90deg);
+              "
+            >
+              <div
+                class="absolute top-4 left-4 bg-teal-500/90 backdrop-blur-sm text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg border border-teal-400"
+              >
+                SOSIAL
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-usmDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-8 relative z-10">
+              <p
+                class="text-xs text-gray-500 mb-3 font-semibold flex items-center"
+              >
+                <i class="far fa-calendar-alt mr-2 text-usmLight text-sm"></i>02
+                Mar 2024
+              </p>
+              <h3
+                class="font-display font-bold text-usmDark text-xl mb-3 line-clamp-2 group-hover:text-usmLight transition-colors cursor-pointer leading-tight"
+              >
+                <a
+                  href="berita/berita-5.html"
+                  class="before:absolute before:inset-0"
+                  >BEM USM Gelar Donor Darah Masal dan Pengobatan Gratis</a
+                >
+              </h3>
+              <p
+                class="text-gray-600 text-sm line-clamp-3 mb-6 leading-relaxed"
+              >
+                Ratusan mahasiswa, dosen, dan staf berpartisipasi dalam aksi
+                bakti sosial peduli kesehatan yang diselenggarakan di Gelora
+                Olahraga USM bekerjasama dengan PMI Kota Semarang.
+              </p>
+              <span
+                class="text-sm font-bold text-usmDark group-hover:text-usmLight inline-flex items-center group/link relative z-20"
+                >Baca Selengkapnya
+                <i
+                  class="fas fa-angle-right ml-2 text-xs transition-transform group-hover/link:translate-x-1"
+                ></i
+              ></span>
+            </div>
+          </article>
+
+          <!-- News 6 -->
+          <article
+            class="bg-white rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden hover-lift group relative"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-b from-transparent to-usmLight/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-0"
+            ></div>
+            <div
+              class="h-56 bg-gray-300 overflow-hidden relative z-10"
+              style="
+                background-image: url(&quot;assets/semarang_city.png&quot;);
+                background-size: cover;
+                background-position: center;
+                filter: grayscale(50%);
+              "
+            >
+              <div
+                class="absolute top-4 left-4 bg-orange-500/90 backdrop-blur-sm text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg border border-orange-400"
+              >
+                ALUMNI
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-usmDark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-8 relative z-10">
+              <p
+                class="text-xs text-gray-500 mb-3 font-semibold flex items-center"
+              >
+                <i class="far fa-calendar-alt mr-2 text-usmLight text-sm"></i>28
+                Feb 2024
+              </p>
+              <h3
+                class="font-display font-bold text-usmDark text-xl mb-3 line-clamp-2 group-hover:text-usmLight transition-colors cursor-pointer leading-tight"
+              >
+                <a
+                  href="berita/berita-6.html"
+                  class="before:absolute before:inset-0"
+                  >Inspirasi Alumni: Dari Aktivis Kampus Menjadi Sociopreneur
+                  Sukses</a
+                >
+              </h3>
+              <p
+                class="text-gray-600 text-sm line-clamp-3 mb-6 leading-relaxed"
+              >
+                Kisah menarik dari alumni Fakultas Ekonomi angkatan 2012 yang
+                sukses memberdayakan petani kopi lokal Jateng dan menembus pasar
+                ekspor Eropa. Baca kiat suksesnya disini.
+              </p>
+              <span
+                class="text-sm font-bold text-usmDark group-hover:text-usmLight inline-flex items-center group/link relative z-20"
+                >Baca Selengkapnya
+                <i
+                  class="fas fa-angle-right ml-2 text-xs transition-transform group-hover/link:translate-x-1"
+                ></i
+              ></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-12 text-center md:hidden" data-aos="fade-up">
+          <a
+            href="#"
+            class="inline-flex bg-gradient-to-r from-usmDark to-[#00386b] text-white px-8 py-4 rounded-full font-bold text-sm tracking-wide shadow-lg hover:shadow-xl transition-all hover:-translate-y-1"
+            >Lihat Seluruh Berita</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Announcement Section -->
+    <section
+      class="py-24 bg-white border-t border-gray-100/50 relative bg-pattern"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="font-display text-4xl font-extrabold text-usmDark mb-4">
+            Pengumuman
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-usmLight to-yellow-500"
+              >Kampus</span
+            >
+          </h2>
+          <div
+            class="h-1.5 w-24 bg-gradient-to-r from-usmDark to-usmLight mx-auto rounded-full mb-6"
+          ></div>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            Informasi dan agenda penting bagi seluruh sivitas akademika
+            Universitas Semarang.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Announce 1 -->
+          <div
+            class="bg-gradient-to-br from-blue-50 to-white rounded-3xl p-8 border border-blue-100 shadow-sm hover-lift flex flex-col h-full relative overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="absolute -right-6 -top-6 text-8xl text-blue-500/5 group-hover:text-blue-500/10 transition-colors duration-500 transform rotate-12"
+            >
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="flex items-center gap-4 mb-6 relative z-10">
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-usmDark to-blue-800 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-usmDark/20"
+              >
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <div>
+                <span
+                  class="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-[10px] font-extrabold uppercase tracking-widest rounded-full mb-1"
+                  >Penerimaan Mahasiswa Baru</span
+                >
+                <span class="block text-sm text-gray-500 font-medium"
+                  ><i class="far fa-clock mr-1 text-usmLight"></i> Hari
+                  ini</span
+                >
+              </div>
+            </div>
+            <h3
+              class="font-display text-xl font-extrabold text-usmDark mb-4 leading-tight group-hover:text-usmLight transition-colors"
+            >
+              Pendaftaran Gelombang 2 PMB Telah Dibuka
+            </h3>
+            <p
+              class="text-gray-600 text-sm line-clamp-5 flex-grow leading-relaxed"
+            >
+              Universitas Semarang memanggil calon pemimpin bangsa. Pendaftaran
+              mahasiswa baru (S1, S2, D3) gelombang dua resmi dibuka. Dapatkan
+              potongan biaya bagi pendaftar jalur prestasi.
+            </p>
+          </div>
+
+          <!-- Announce 2 -->
+          <div
+            class="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 border border-gray-200 shadow-sm hover-lift flex flex-col h-full relative overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="absolute -right-6 -top-6 text-8xl text-gray-500/5 group-hover:text-gray-500/10 transition-colors duration-500 transform rotate-12"
+            >
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <div class="flex items-center gap-4 mb-6 relative z-10">
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-gray-900/20"
+              >
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div>
+                <span
+                  class="inline-block px-3 py-1 bg-gray-200 text-gray-700 text-[10px] font-extrabold uppercase tracking-widest rounded-full mb-1"
+                  >Akademik</span
+                >
+                <span class="block text-sm text-gray-500 font-medium"
+                  ><i class="far fa-clock mr-1 text-usmLight"></i> 3 Hari yang
+                  lalu</span
+                >
+              </div>
+            </div>
+            <h3
+              class="font-display text-xl font-extrabold text-usmDark mb-4 leading-tight group-hover:text-usmLight transition-colors"
+            >
+              Jadwal Perwalian dan Pengisian KRS Semester Gasal
+            </h3>
+            <p
+              class="text-gray-600 text-sm line-clamp-5 flex-grow leading-relaxed"
+            >
+              Pemberitahuan kepada seluruh mahasiswa aktif batas akhir pengisian
+              Kartu Rencana Studi (KRS) dan persetujuan dosen wali adalah hari
+              Jumat, 25 Agustus 2024. Harap diselesaikan tepat waktu.
+            </p>
+          </div>
+
+          <!-- Announce 3 -->
+          <div
+            class="bg-gradient-to-br from-yellow-50 to-white rounded-3xl p-8 border border-yellow-200 shadow-sm hover-lift flex flex-col h-full relative overflow-hidden group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="absolute -right-6 -top-6 text-8xl text-usmLight/10 group-hover:text-usmLight/20 transition-colors duration-500 transform rotate-12"
+            >
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="flex items-center gap-4 mb-6 relative z-10">
+              <div
+                class="w-14 h-14 bg-gradient-to-br from-usmLight to-yellow-500 rounded-2xl flex items-center justify-center text-usmDark text-2xl font-bold shadow-lg shadow-usmLight/30"
+              >
+                <i class="fas fa-medal"></i>
+              </div>
+              <div>
+                <span
+                  class="inline-block px-3 py-1 bg-yellow-100 text-yellow-700 text-[10px] font-extrabold uppercase tracking-widest rounded-full mb-1"
+                  >Kompetisi</span
+                >
+                <span class="block text-sm text-gray-500 font-medium"
+                  ><i class="far fa-clock mr-1 text-usmLight"></i> 1 Minggu yang
+                  lalu</span
+                >
+              </div>
+            </div>
+            <h3
+              class="font-display text-xl font-extrabold text-usmDark mb-4 leading-tight group-hover:text-usmLight transition-colors"
+            >
+              Pendaftaran Hibah Program Kreativitas Mahasiswa (PKM)
+            </h3>
+            <p
+              class="text-gray-600 text-sm line-clamp-5 flex-grow leading-relaxed"
+            >
+              Biro Kemahasiswaan USM membuka klinik penyusunan proposal PKM
+              Dikti pendanaan 2025. Terbuka bagi kelompok mahasiswa dari seluruh
+              fakultas. Hadiah pendanaan internal menanti untuk proposal
+              terbaik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <app-footer base-path=""></app-footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        offset: 50,
+        duration: 800,
+        easing: "ease-out-cubic",
+      });
+    </script>
+  </body>
+</html>
