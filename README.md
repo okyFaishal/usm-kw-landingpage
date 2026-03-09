@@ -5,9 +5,13 @@
 [![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Web-orange.svg)]()
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Lihat_Situs-blueviolet.svg)](http://usm-kw.page.gd/)
 
 Selamat datang di repositori resmi **Portal Informasi Universitas Semarang (USM)**. 
 Proyek ini adalah sistem antarmuka web modern, responsif, dan interaktif yang dibangun untuk menyajikan segala informasi mengenai profil, akademik, biaya, hingga jalur penerimaan mahasiswa baru (PMB) di Universitas Semarang.
+
+> **🚀 Live Demo Berjalan:** Anda dapat melihat dan mencoba hasil langsung (*deployed version*) dari proyek ini di tautan berikut: 
+> **👉 [http://usm-kw.page.gd/](http://usm-kw.page.gd/)**
 
 ---
 
